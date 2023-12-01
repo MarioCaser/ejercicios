@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen DIW - 2º Trimestre</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img id="logo" src="img/logo.png" alt="logo">
+            <figcaption>Desconecta de la ciudad. Disfruta de un alojamiento en el campo solo para ti.</figcaption>
+        </figure>
+
+        <div id="eslogan">
+            <h1>Natural Booking</h1>
+            <img src="img/logo-rural1.jpg" alt="Logo">
+        </div>
+
+        <!--Login-->
+        <div id="login">
+            <label for="login">Login</label>
+            <input type="text" name="login" id="login">
+            <button>Entrar</button>
+            <hr>
+            <a href="#">Regístrate!</a>
+            <br>
+            <a href="#">Olvidaste tu clave?</a>
+        </div>
+    </header>
+
+    <div class="contenedorGrid">
+        <!--Menú-->
+        <nav class="claseIzq">
+            <a href="#">Casas</a>
+            <a href="#">Mapas</a>
+            <a href="#">Rutas de senderísmo</a>
+            <a href="#">¿Qué ver?</a>
+            <a href="#">¿Cómo llegar?</a>
+        </nav>
+
+        <!--Filtros de búsqueda-->
+        <div id="filtros" class="claseIzq">
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 1</label><br>
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 2</label><br>
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 3</label><br>
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 4</label><br>
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 5</label><br>
+            <input type="checkbox" name="options">
+            <label for="option1">Opción 6</label><br>
+        </div>
+
+        <!--Reservas-->
+        <main>
+            <form action="#">
+                <label for="destino">Destino: </label>
+                <input type="text" name="destino" id="destino"><br>
+                <label for="check-in">Check-in </label>
+                <input type="date" name="check-in" id="checkin">
+                <label for="check-out">Check-out </label>
+                <input type="date" name="check-out" id="checkout"><br>
+                <label for="adultos">Adultos: </label>
+                <input type="number" name="adultos" id="adultos">
+                <label for="children">Niños: </label>
+                <input type="number" name="children" id="children"><br>
+                <label for="numHab">Número de habitaciones: </label>
+                <input type="number" name="numHab" id="numHab">
+                <button>Buscar!</button>
+            </form>
+        </main>
+
+        <!--Patrocinadores-->
+        <aside id="patrocinadores">
+            <div>
+                <img src="img/logo-rural2.jpg" alt="logo">
+                <br>
+                <a href="#">CoolMunda Spring</a>
+            </div>
+            <div>
+                <img src="img/logo-rural3.png" alt="logo">
+                <br>
+                <a href="#">Paradise</a>
+            </div>
+            <div>
+                <img src="img/logo-rural4.jpg" alt="logo">
+                <br>
+                <a href="#">Cottage Houses</a>
+            </div>
+        </aside>
+
+        <!--Galería-->
+        <div id="galeria">
+            <img src="img/casa1.jpg">
+            <img src="img/casa2.jpg">
+            <img src="img/casa3.jpg">
+            <img src="img/casa4.jpg">
+            <img src="img/casa5.jpg">
+            <img src="img/casa6.jpg">
+            <img src="img/casa7.jpg">
+            <img src="img/casa8.jpg">
+            <img src="img/casa9.jpg">
+            <img src="img/casa10.jpg">
+            <img src="img/casa11.jpg">
+        </div>
+    </div>
+    <hr>
+    <!--Pie-->
+    <footer>
+        <a href="#">admin@naturalbookinghouse.com</a>
+        <h4>La naturaleza no es un lugar para visitar. Es el hogar.</h4>
+        <div>
+            <img src="img/instagram.jpg" alt="Instagram">
+            <img src="img/facebook.png" alt="Facebook">
+            <img src="img/twitter.png" alt="Twitter">
+        </div>
+    </footer>
+</body>
+
+</html>

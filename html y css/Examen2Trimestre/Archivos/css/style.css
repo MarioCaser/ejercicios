@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*------------------------------------------------------------------------------------------*/
+/*HEADER*/
+/*------------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    background-image: url("../img/fondo.png");
+    background-color: rgb(85, 148, 199);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #435f2c;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+figure {
+    display: inline;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 2px solid #ecbe14;
+    border-radius: 1rem;
+
+    max-width: 20%;
+    min-width: 150px;
+    text-align: center;
+}
+
+figure img {
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+figcaption {
+    color: #435f2c;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
+img {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+#eslogan {
+    text-align: center;
+}
+
+#login {
+    padding-bottom: 2%;
+    align-self: flex-end;
+    text-align: center;
+}
+
+header input[type="text"] {
+    border: 2px solid #435f2c;
+    border-radius: 2em;
+    background-color: #899b38;
+    height: 2.5em;
+    width: 20%;
+
+    min-width: 150px;
+}
+
+button {
+    background-color: #ecbe14;
+    color: white;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+}
+
+header a {
+    color: #ecbe14;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*MEDIAS QUERY DEL HEADER*/
+/*------------------------------------------------------------------------------------------*/
+@media screen and (max-width:840px) {
+
+    header {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    figure {
+        display: none;
+    }
+
+    #login {
+    padding-bottom: 2%;
+    align-self: center;
+    text-align: center;
+}
+
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* PARTE CENTRAL */
+/*------------------------------------------------------------------------------------------*/
+.contenedorGrid {
+    margin-bottom: 5%;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto auto auto;
+
+    row-gap: 0.5%;
+
+    align-content: stretch;
+    justify-content: stretch;
+
+}
+
+.claseIzq {
+    background-color: #066db8;
+    margin: 1px;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    color: white;
+    padding: 0.5rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+    justify-items: flex-start;
+    align-content: center;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+main {
+    align-self: center;
+    justify-self: stretch;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#filtros {
+    background-color: #309191;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+}
+
+form * {
+    margin: 1.5%;
+    border-radius: 5px;
+
+}
+
+form button {
+    float:right;
+}
+
+#patrocinadores {
+    background-color: gray;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding:0.5rem;
+
+    text-align: center;
+
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#patrocinadores div {
+    padding: 5%;
+}
+
+#galeria {
+    justify-self: center;
+    align-self: center;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+#galeria img {
+    max-width: 18%;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*MEDIAS QUERY DE LA PARTE CENTRAL*/
+/*------------------------------------------------------------------------------------------*/
+@media screen and (max-width:650px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #filtros {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    main {
+        grid-column-start: 2;
+        grid-column-end: 5;
+
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    #patrocinadores {
+        grid-column-start: 5;
+        grid-column-end: 6;
+
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    #galeria {
+        grid-column-start: 1;
+        grid-column-end: 6;
+
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+        justify-items: flex-start;
+        align-content: center;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }  
+
+    main {
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    #filtros, #patrocinadores {
+        display: none;
+    }
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------------------------------------------------*/
+footer {
+    background-image: url("../img/fondo.png");
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer h4 {
+    color: #ecbe14;
+    font-style: italic;
+}
+
+footer div {
+    width: 20%;
+} 
+
+footer img {
+    width: 3%;
+    min-width: 50px;    
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* MEDIAS QUERY DEL FOOTER */
+/*------------------------------------------------------------------------------------------*/
+@media screen and (max-width:870px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer h4 {
+        order: 1;
+    }
+
+    footer div {
+        order: 2;
+    }
+
+    footer a {
+        order: 3;
+    }
+}
